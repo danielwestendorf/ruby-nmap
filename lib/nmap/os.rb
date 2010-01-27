@@ -117,6 +117,31 @@ module Nmap
     def fingerprint
       @node.at("osfingerprint/@fingerprint").inner_text
     end
+    
+    def type
+    	osclass = @node.at("osclass")
+    	return osclass['type'] if osclass else "Unknown"
+    end
+    
+    def vendor
+    	osclass = @node.at("osclass")
+    	return osclass['vendor'] if osclass else "Unknown"
+    end
+    
+    def os_family
+    	osclass = @node.at("osclass")
+    	return osclass['osfamily'] if osclass else "Unknown"
+    end
+    
+    def os_name
+    	osmatch = @node.at("osmatch")
+    	return osmatch['name'] if osmatch else "Unknown"
+    end
+    
+    def os_gen
+    	osclass = @node.at("osclass")
+    	return osclass['osgen'] if osclass else "Unknown"
+    end
 
     #
     # Parses the OS match information.

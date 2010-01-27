@@ -1,3 +1,7 @@
+=== 0.1.2 / 2010-01-26
+
+* Require RProgram >= 0.1.8.
+  * Adds +sudo+ and +sudo=+ instance methods to {Nmap::Task
 === 0.1.1 / 2010-01-02
 
 * Require RProgram >= 0.1.8.

@@ -119,6 +119,16 @@ module Nmap
 
       return @mac
     end
+    
+    def mac_vendor
+      unless @mac_vendor
+        addr = @node.xpath("address[@addr][@addrtype='mac']").first
+
+        @mac_vendor = addr['vendor'] if addr
+      end
+
+      return @mac_vendor
+    end
 
     #
     # Parses the IPv4 address of the host.

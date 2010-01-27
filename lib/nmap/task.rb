@@ -129,8 +129,8 @@ module Nmap
   # <tt>--datadir</tt>:: <tt>nmap.nmap_datadir</tt>
   # <tt>--send-eth</tt>:: <tt>nmap.raw_ethernet</tt>
   # <tt>--send-ip</tt>:: <tt>nmap.raw_ip</tt>
-  # <tt>--privledged</tt>:: <tt>nmap.privledged</tt>
-  # <tt>--unprivledged</tt>:: <tt>nmap.unprivledged</tt>
+  # <tt>--privileged</tt>:: <tt>nmap.privileged</tt>
+  # <tt>--unprivileged</tt>:: <tt>nmap.unprivileged</tt>
   # <tt>-V</tt>:: <tt>nmap.version</tt>
   # <tt>-h</tt>:: <tt>nmap.help</tt>
   #
@@ -256,8 +256,8 @@ module Nmap
     long_option :flag => '--datadir', :name => :nmap_datadir
     long_option :flag => '--send-eth', :name => :raw_ethernet
     long_option :flag => '--send-ip', :name => :raw_ip
-    long_option :flag => '--privledged'
-    long_option :flag => '--unprivleged'
+    long_option :flag => '--privileged', :name => :privileged
+    long_option :flag => '--unprivileged', :name => :unprivileged
     short_option :flag => '-V', :name => :version
     short_option :flag => '-h', :name => :help
 
