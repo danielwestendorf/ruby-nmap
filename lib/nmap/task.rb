@@ -126,6 +126,7 @@ module Nmap
   #
   # <tt>-6</tt>:: <tt>nmap.ipv6</tt>
   # <tt>-A</tt>:: <tt>nmap.all</tt>
+  # <tt>-d</tt>:: <tt>nmap.debug</tt>
   # <tt>--datadir</tt>:: <tt>nmap.nmap_datadir</tt>
   # <tt>--send-eth</tt>:: <tt>nmap.raw_ethernet</tt>
   # <tt>--send-ip</tt>:: <tt>nmap.raw_ip</tt>
@@ -253,6 +254,7 @@ module Nmap
     # MISC:
     short_option :flag => '-6', :name => :ipv6
     short_option :flag => '-A', :name => :all
+    short_option :flag => '-d', :name => :debug
     long_option :flag => '--datadir', :name => :nmap_datadir
     long_option :flag => '--send-eth', :name => :raw_ethernet
     long_option :flag => '--send-ip', :name => :raw_ip
