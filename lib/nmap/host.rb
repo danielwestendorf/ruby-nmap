@@ -390,7 +390,7 @@ module Nmap
       end
 
       return Port.new(
-        node['protocol'].to_sym,
+        node['protocol'],
         node['portid'].to_i,
         state['state'].to_sym,
         state['reason'],
